@@ -1,13 +1,131 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Share+Tech&display=swap');
+
+:root {
+  --dark-blue: #071E3D;
+  --blue: #1F4287;
+  --blue-green: #278EA5;
+  --aqua: #21E6C1;
+  --red: #E64848;
+  --white: #EAF6F6;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ------------------------------------------------------------------
+-------------------------- GLOBAL STYLES ----------------------------
+---------------------------------------------------------------------*/
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--white);
+  background-color: var(--dark-blue);
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+  font-family: 'Share Tech', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+/* ------------------------------------------------------------------
+------------------------------- COLORS ------------------------------
+---------------------------------------------------------------------*/
+.c-aqua {
+  color: var(--aqua);
+}
+
+.c-bluegreen {
+  color: var(--blue-green);
+}
+
+/* ------------------------------------------------------------------
+-------------------------------- FONTS ------------------------------
+---------------------------------------------------------------------*/
+.f-share-tech {
+  font-family: 'Share Tech', sans-serif;
+}
+
+.f-inter-bold {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.f-inter-regular {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.f-inter-light {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+
+/* ------------------------------------------------------------------
+------------------------------- HEADER ------------------------------
+---------------------------------------------------------------------*/
+.header-title {
+  margin: auto;
+  padding: 0.3rem;
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 2px solid var(--aqua);
+  border-radius: 10px;
+}
+
+.nav-link {
+  margin: 1rem;
+  display: block;
+  color: var(--aqua);
+  border-bottom: 2px solid var(--blue-green);
+}
+
+.landing-bg {
+  height: 100vh;
+  margin: 0;
+  padding: 1rem 0;
+  background-image: linear-gradient(to bottom, rgba(7, 30, 61, 1), rgba(7, 30, 61, 0.7)), url('img/bg-img.png');
+  background-size: cover;
+}
+
+.landing {
+  padding: 2rem;
+}
+
+/* ------------------------------------------------------------------
+-------------------------------- ICONS ------------------------------
+---------------------------------------------------------------------*/
+.icon {
+  height: 3rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
 }
