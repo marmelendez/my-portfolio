@@ -18,7 +18,8 @@ const experiences = [
       Quisque vestibulum tellus vel libero pulvinar auctor.
       Morbi at erat porta, scelerisque urna nec, tincidunt dui.`,
       location: "San Francisco, CA",
-      open: true
+      open: true,
+      technologies: ["Android Studio", "Kotlin", "Java"]
     },
     {
       company: "Woko",
@@ -32,7 +33,8 @@ const experiences = [
       Quisque vestibulum tellus vel libero pulvinar auctor.
       Morbi at erat porta, scelerisque urna nec, tincidunt dui.`,
       location: "Monterrey, NL",
-      open: false
+      open: false,
+      technologies: ["HTML", "CSS", "JavaScript", "MySQL", "PHP"]
     },
     {
       company: "Bosch",
@@ -46,7 +48,8 @@ const experiences = [
       Quisque vestibulum tellus vel libero pulvinar auctor.
       Morbi at erat porta, scelerisque urna nec, tincidunt dui.`,
       location: "Guadalajara, JA",
-      open: false
+      open: false,
+      technologies: ["IBM DB", "vTest", "Canoe"]
     }
   ]
 
