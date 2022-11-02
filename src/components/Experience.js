@@ -1,5 +1,5 @@
-import LocationIconPng from '../img/icon-location.png'
-import LocationIconWebp from '../img/icon-location.webp'
+import LocationIconPng from '../img/icons/icon-location.png'
+import LocationIconWebp from '../img/icons/icon-location.webp'
 import Button from './Button'
 
 function Experience({ data }) {
@@ -9,7 +9,6 @@ function Experience({ data }) {
     const showDescription = () => {
         const experienceTop = document.getElementById(topID)
         const experienceBottom = document.getElementById(bottomID)
-        console.log(experienceBottom);
 
         if (experienceBottom.classList.contains("hide")) {
             experienceTop.classList.remove("close");

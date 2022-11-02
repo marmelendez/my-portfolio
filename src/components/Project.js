@@ -1,8 +1,8 @@
-const GitHubLogoWebp = require('../img/icon-github.webp')
-const GitHubLogoPng = require('../img/icon-github.png')
-const ExternalLinkWebp = require('../img/icon-external-link.webp')
-const ExternalLinkPng = require('../img/icon-external-link.png')
-
+import GitHubLogoWebp from '../img/icons/icon-github.webp'
+import GitHubLogoPng from '../img/icons/icon-github.png'
+import ExternalLinkWebp from '../img/icons/icon-external-link.webp'
+import ExternalLinkPng from '../img/icons/icon-external-link.png'
+import AndroidStudioIcon from '../img/tech-icons/androidstudio.svg'
 
 function Project({ project }) {
     return (
@@ -15,6 +15,14 @@ function Project({ project }) {
             <h2>{project.name}</h2>
 
             <p>{project.description}</p>
+
+            <div>
+                <img src={AndroidStudioIcon}
+                    alt='HTML logo'
+                    width="200px"
+                    height="200px"
+                />
+            </div>
 
             <div className='project-links'>
 
