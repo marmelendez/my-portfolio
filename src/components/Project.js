@@ -17,11 +17,9 @@ function Project({ project }) {
             <p>{project.description}</p>
 
             <div>
-                <img src={AndroidStudioIcon}
-                    alt='HTML logo'
-                    width="200px"
-                    height="200px"
-                />
+                {
+                    project.technologies.map(name => <img src={name} alt='HTML logo' width="100px" height="100px"/>)
+                }
             </div>
 
             <div className='project-links'>
