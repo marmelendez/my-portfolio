@@ -10,6 +10,7 @@ import BoschPng from './img/logo-bosch.png'
 import BoschWebp from './img/logo-bosch.webp'
 import WokoPng from './img/logo-woko.png'
 import WokoWebp from './img/logo-woko.webp'
+import Project from './components/Project'
 // import BGVideo from './img/banner-landing.mp4'
 
 function App() {
@@ -59,6 +60,19 @@ function App() {
     }
   ]
 
+  const project = [
+    {
+      name: "Amdocs Hiring Tracker",
+      description: "Morbi rutrum ante vitae blandit volutpat. Duis auctor laoreet faucibus. Ut at vulputate ante. Aliquam sed eleifend massa. Maecenas convallis nulla id nulla faucibus sodales. ",
+      imgPng: BoschPng,
+      imgWebp: BoschWebp,
+      hasGithub: true,
+      hasLink: true,
+      githubLink: "",
+      link: "",
+    }
+  ]
+
   return (
 
     <div className="App">
@@ -92,8 +106,8 @@ function App() {
 
       <section className='section' id="projects">
         <Title number="02" sectionTitle="Projects" />
+        <Project project={project[0]}/>
       </section>
-
     </div>
   );
 }
