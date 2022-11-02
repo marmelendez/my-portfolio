@@ -39,7 +39,7 @@ import sequelize from '../img/tech-icons/sequelize.svg'
 import postgres from '../img/tech-icons/postgresql.svg'
 import unity from '../img/tech-icons/unity.svg'
 import csharp from '../img/tech-icons/csharp.svg'
-import figma from '../img/tech-icons/figma.svg'
+// import figma from '../img/tech-icons/figma.svg'
 
 const projects = [
     {

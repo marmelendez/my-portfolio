@@ -2,7 +2,6 @@ import GitHubLogoWebp from '../img/icons/icon-github.webp'
 import GitHubLogoPng from '../img/icons/icon-github.png'
 import ExternalLinkWebp from '../img/icons/icon-external-link.webp'
 import ExternalLinkPng from '../img/icons/icon-external-link.png'
-import AndroidStudioIcon from '../img/tech-icons/androidstudio.svg'
 
 function Project({ project }) {
     return (
@@ -16,33 +15,34 @@ function Project({ project }) {
 
             <p>{project.description}</p>
 
-            <div>
-                {
-                    project.technologies.map(name => <img src={name} alt='HTML logo' width="100px" height="100px"/>)
-                }
-            </div>
+            <div className='project-bottom'>
+                <div>
+                    {
+                        project.technologies.map(name => <img src={name} alt='HTML logo' width="40px" height="40px" />)
+                    }
+                </div>
 
-            <div className='project-links'>
+                <div className='project-links'>
+                    {project.hasGithub &&
+                        <a href={project.githubLink}>
+                            <picture>
+                                <source srcSet={GitHubLogoWebp} type="image/webp" />
+                                <source srcSet={GitHubLogoPng} type="image/png" />
+                                <img src={GitHubLogoPng} alt="Company Logo" className='icon project-icon' />
+                            </picture>
+                        </a>
+                    }
 
-                {project.hasGithub &&
-                    <a href={project.githubLink}>
-                        <picture>
-                            <source srcSet={GitHubLogoWebp} type="image/webp" />
-                            <source srcSet={GitHubLogoPng} type="image/png" />
-                            <img src={GitHubLogoPng} alt="Company Logo" className='icon' />
-                        </picture>
-                    </a>
-                }
-
-                {project.hasLink &&
-                    <a href={project.link}>
-                        <picture>
-                            <source srcSet={ExternalLinkWebp} type="image/webp" />
-                            <source srcSet={ExternalLinkPng} type="image/png" />
-                            <img src={ExternalLinkPng} alt="Company Logo" className='icon' />
-                        </picture>
-                    </a>
-                }
+                    {project.hasLink &&
+                        <a href={project.link}>
+                            <picture>
+                                <source srcSet={ExternalLinkWebp} type="image/webp" />
+                                <source srcSet={ExternalLinkPng} type="image/png" />
+                                <img src={ExternalLinkPng} alt="Company Logo" className='icon project-icon' />
+                            </picture>
+                        </a>
+                    }
+                </div>
             </div>
         </div>
     )
