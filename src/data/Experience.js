@@ -1,9 +1,9 @@
-import LinkedInPng from '../img/logo-linkedin.png'
-import LinkedInWebp from '../img/logo-linkedin.webp'
-import BoschPng from '../img/logo-bosch.png'
-import BoschWebp from '../img/logo-bosch.webp'
-import WokoPng from '../img/logo-woko.png'
-import WokoWebp from '../img/logo-woko.webp'
+import LinkedInPng from '../img/work/logo-linkedin.png'
+import LinkedInWebp from '../img/work/logo-linkedin.webp'
+import BoschPng from '../img/work/logo-bosch.png'
+import BoschWebp from '../img/work/logo-bosch.webp'
+import WokoPng from '../img/work/logo-woko.png'
+import WokoWebp from '../img/work/logo-woko.webp'
 
 const experiences = [
     {
