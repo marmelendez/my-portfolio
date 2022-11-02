@@ -2,11 +2,9 @@ import Header from './components/Header'
 import Landing from './components/Landing'
 import Title from './components/Title'
 import Experience from './components/Experience'
-import AboutMePng from './img/about-me.png'
-import AboutMeWebp from './img/about-me.webp'
 import Project from './components/Project'
 
-import aboutMeText from './data/AboutMe'
+import aboutMe from './data/AboutMe'
 import experiences from './data/Experience'
 import projects from './data/Projects'
 // import BGVideo from './img/banner-landing.mp4'
@@ -28,11 +26,11 @@ function App() {
 
       <section className='section' id="about-me">
         <Title number="00" sectionTitle="About me" />
-        <p>{aboutMeText}</p>
+        <p>{aboutMe.text}</p>
         <picture>
-          <source srcSet={AboutMeWebp} type="image/webp" />
-          <source srcSet={AboutMePng} type="image/png" />
-          <img src={AboutMePng} alt="Girl with ceros and ones background" className='about-me-img' />
+          <source srcSet={aboutMe.imgWebp} type="image/webp" />
+          <source srcSet={aboutMe.imgPng} type="image/png" />
+          <img src={aboutMe.imgPng} alt="Girl with ceros and ones background" className='about-me-img' />
         </picture>
       </section>
 
