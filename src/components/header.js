@@ -29,7 +29,7 @@ function Header() {
                     </li>
                     
                     <li>
-                        <a href="#project" aria-label="Go to projects section" className="nav-link">
+                        <a href="#projects" aria-label="Go to projects section" className="nav-link">
                             <span className="c-bluegreen">02 </span>Project
                         </a>
                     </li>

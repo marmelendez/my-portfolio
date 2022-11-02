@@ -12,7 +12,7 @@ function Landing() {
             <h1 className="m-0">I am Maribel Melendez</h1>
             <p className="m-0">I am computer science and technology student. Keep scrolling to know where what I have been doing :D</p>
 
-            <a href="https://github.com/marmelendez" aria-label="Github url">
+            <a href="https://github.com/marmelendez" aria-label="Github url" target="_blank">
                 <picture>
                     <source srcSet={GitHubLogoWebp} type="image/webp" />
                     <source srcSet={GitHubLogoPng} type="image/png" />
